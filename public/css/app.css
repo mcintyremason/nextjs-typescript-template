@@ -29,13 +29,13 @@
 /* Fonts */
 /* Webfont: BloggerSans */
 @font-face {
-  font-family: 'BloggerSans';
-  src: url('fonts/1001fonts/BloggerSans.eot');
+  font-family: "BloggerSans";
+  src: url("fonts/1001fonts/BloggerSans.eot");
   /* IE9 Compat Modes */
-  src: url('fonts/1001fonts/BloggerSans.eot?#iefix') format('embedded-opentype'),
-    url('fonts/1001fonts/BloggerSans.woff') format('woff'),
-    url('fonts/1001fonts/BloggerSans.ttf') format('truetype'),
-    url('fonts/1001fonts/BloggerSans.svg#BloggerSans') format('svg');
+  src: url("fonts/1001fonts/BloggerSans.eot?#iefix") format("embedded-opentype"),
+    url("fonts/1001fonts/BloggerSans.woff") format("woff"),
+    url("fonts/1001fonts/BloggerSans.ttf") format("truetype"),
+    url("fonts/1001fonts/BloggerSans.svg#BloggerSans") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: normal;
@@ -43,8 +43,8 @@
 }
 /* Webfont: BloggerSans */
 @font-face {
-  font-family: 'San Frediano';
-  src: url('fonts/1001fonts/san_frediano_regular.ttf');
+  font-family: "San Frediano";
+  src: url("fonts/1001fonts/san_frediano_regular.ttf");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
@@ -130,7 +130,8 @@ li {
 
 .app {
   height: inherit;
-  font-family: 'San Frediano', 'BloggerSans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "San Frediano", "BloggerSans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -150,4 +151,14 @@ li {
 
 .height-full {
   height: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+  body > div {
+    height: inherit;
+  }
+
+  body > div > div {
+    height: inherit;
+  }
 }

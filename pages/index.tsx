@@ -44,7 +44,7 @@ const IndexPage = () => (
   <ThemeProvider theme={theme}>
     <Layout title="nextjs-typescript-template">
       <Grid
-        className="app"
+        className="app height-full"
         itemScope
         itemType="http://schema.org/LocalBusiness"
       >
