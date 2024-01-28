@@ -1,18 +1,17 @@
-import React from "react";
 import {
   Grid,
   ThemeProvider,
-  createMuiTheme,
+  createTheme,
   responsiveFontSizes,
-} from "@material-ui/core";
+} from "@mui/material";
 
-import Layout from "../components/Layout";
-import Header from "../components/Header";
 import Content from "../components/Content";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Layout from "../components/Layout";
 
 const theme = responsiveFontSizes(
-  createMuiTheme({
+  createTheme({
     breakpoints: {
       values: {
         xs: 0,

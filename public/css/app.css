@@ -151,14 +151,17 @@ li {
 
 .height-full {
   height: 100%;
+  overflow: auto;
 }
 
 @media only screen and (min-width: 769px) {
   body > div {
     height: inherit;
+    overflow: auto;
   }
 
   body > div > div {
     height: inherit;
+    overflow: auto;
   }
 }

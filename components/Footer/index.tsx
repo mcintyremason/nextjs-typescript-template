@@ -1,21 +1,24 @@
-import { Grid } from '@material-ui/core'
-import React from 'react'
-import styles from './index.module.css'
-import classNames from 'classnames'
+import { Grid } from "@mui/material";
+import classNames from "classnames";
+import React from "react";
+import styles from "./index.module.css";
 
 type FooterProps = {
-  isAbsolute?: boolean
-}
+  isAbsolute?: boolean;
+};
 
 const Footer: React.FC<FooterProps> = (props: FooterProps) => {
-  const { isAbsolute } = props
+  const { isAbsolute } = props;
 
   return (
     <Grid
       container
-      className={classNames(styles['footer'], isAbsolute ? styles['absolute'] : '')}
+      className={classNames(
+        styles["footer"],
+        isAbsolute ? styles["absolute"] : "",
+      )}
     ></Grid>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

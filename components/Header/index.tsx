@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { AppBar, Grid, Link } from "@material-ui/core";
-import HamburgerNav from "../HamburgerNav";
+import { AppBar, Grid, Link } from "@mui/material";
 import classNames from "classnames";
+import React, { useState } from "react";
+import HamburgerNav from "../HamburgerNav";
 import styles from "./index.module.css";
 
 type HeaderProps = {};
@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = (_: HeaderProps) => {
 
   return (
     <AppBar position="fixed" className={styles["app-bar"]}>
-      <Grid container direction="column" justify="center">
+      <Grid container direction="column" justifyContent="center">
         <Grid container className={styles["header"]}>
           <Grid
             container
@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = (_: HeaderProps) => {
             xs={10}
             sm={6}
             direction="column"
-            justify="center"
+            justifyContent="center"
           >
             <h1 className={styles["header-name"]}>
               <Link itemProp="legalName" className={styles["name"]} href="/">
@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = (_: HeaderProps) => {
           </Grid>
           <Grid
             container
-            justify="center"
+            justifyContent="center"
             item
             xs={12}
             className={classNames(
@@ -52,7 +52,7 @@ const Header: React.FC<HeaderProps> = (_: HeaderProps) => {
             <Grid
               className={styles["menu"]}
               container
-              justify="center"
+              justifyContent="center"
               direction="row"
               wrap="nowrap"
             >

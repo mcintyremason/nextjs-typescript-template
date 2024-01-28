@@ -1,8 +1,9 @@
-import styles from "./index.module.css";
 import classNames from "classnames";
+import styles from "./index.module.css";
 
+import { Grid } from "@mui/material";
 import ContentCard from "../ContentCard";
-import { Grid } from "@material-ui/core";
+
 import React from "react";
 
 type ContentProps = {};
@@ -19,8 +20,8 @@ const Content: React.FC<ContentProps> = (_: ContentProps) => (
         item
         xs={12}
         md={6}
-        justify="space-evenly"
-        alignContent="center"
+        justifyContent="space-evenly"
+        alignItems="center"
         className={classNames(
           styles["content-cards-container"],
           styles["cards-left"],
@@ -36,8 +37,8 @@ const Content: React.FC<ContentProps> = (_: ContentProps) => (
         item
         xs={12}
         md={6}
-        justify="space-evenly"
-        alignContent="center"
+        justifyContent="space-evenly"
+        alignItems="center"
         className={classNames(
           styles["content-cards-container"],
           styles["cards-right"],
