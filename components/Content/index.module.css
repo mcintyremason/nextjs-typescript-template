@@ -31,7 +31,9 @@
 
 @media only screen and (min-width: 769px) {
   div.main-container {
-    /* height: calc(100% - var(--desktop-header-height) - var(--footer-height)); */
+    height: -moz-calc(
+      100% - var(--desktop-header-height) - var(--footer-height)
+    );
     padding: var(--desktop-header-height) 0 0;
     flex-flow: column nowrap;
   }
